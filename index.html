@@ -10,17 +10,22 @@
 </head>
 
 <body>
-  <header>
-    <a href="#">
+  <header class="header">
+    <a href="#" class="header__title">
       <h1>I-Recipe</h1>
     </a>
-    <nav>
-      <ul>
-        <li>Accueil</li>
-        <li>Recette de saison</li>
-        <li>Entrées</li>
-        <li>Plats</li>
-        <li>Desserts</li>
+    <button class="header__burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+    <nav class="header__nav">
+      <ul class="header__link-list">
+        <li><a href="#" class="header__link">Accueil</a></li>
+        <li><a href="#" class="header__link">Recette de saison</a></li>
+        <li><a href="#" class="header__link">Entrées</a></li>
+        <li><a href="#" class="header__link">Plats</a></li>
+        <li><a href="#" class="header__link">Desserts</a></li>
       </ul>
     </nav>
   </header>
@@ -32,13 +37,13 @@
     <section class="random-recipe">
       <h2 class="random-recipe__title">Recette aléatoire</h2>
       <div class="random-recipe__content">
-        <img src="#" alt="" class="random-recipe__image" />
+        <img src="./docs/pineapple-pizza.jpg" alt="Pizza ananas" class="random-recipe__image" />
         <div class="random-recipe__info">
           <h3 class="random-recipe__name">Pizza ananas</h3>
           <p class="random-recipe__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab tempora optio et
-            corrupti? Earum libero officia magni error delectus laudantium voluptates ad rem nulla
-            at ipsa voluptatum, aut reprehenderit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus neque cupiditate laudantium
+            perspiciatis vero animi, voluptate delectus! Voluptatum, eveniet, ea hic laudantium fugit officiis eos omnis
+            aut pariatur, deleniti praesentium!
           </p>
         </div>
       </div>
@@ -47,7 +52,7 @@
       <h2 class="best-rated__title">Les recettes les mieux notées</h2>
       <div class="best-rated__container">
         <div class="recipe">
-          <img src="#" alt="">
+          <img src="./docs/pineapple-pizza.jpg" alt="">
           <div class="recipe__info">
             <h3 class="recipe__name">Pate carbonara</h3>
             <p class="recipe__description">
@@ -57,7 +62,7 @@
           </div>
         </div>
         <div class="recipe">
-          <img src="#" alt="">
+          <img src="./docs/pineapple-pizza.jpg" alt="">
           <div class="recipe__info">
             <h3 class="recipe__name">Pate carbonara</h3>
             <p class="recipe__description">
@@ -67,7 +72,7 @@
           </div>
         </div>
         <div class="recipe">
-          <img src="#" alt="">
+          <img src="./docs/pineapple-pizza.jpg" alt="">
           <div class="recipe__info">
             <h3 class="recipe__name">Pate carbonara</h3>
             <p class="recipe__description">
@@ -77,7 +82,7 @@
           </div>
         </div>
         <div class="recipe">
-          <img src="#" alt="">
+          <img src="./docs/pineapple-pizza.jpg" alt="">
           <div class="recipe__info">
             <h3 class="recipe__name">Pate carbonara</h3>
             <p class="recipe__description">
@@ -87,7 +92,7 @@
           </div>
         </div>
         <div class="recipe">
-          <img src="#" alt="">
+          <img src="./docs/pineapple-pizza.jpg" alt="">
           <div class="recipe__info">
             <h3 class="recipe__name">Pate carbonara</h3>
             <p class="recipe__description">
@@ -99,10 +104,10 @@
       </div>
     </section>
     <section class="most-viewed">
-      <h2 class="most-viewed__title">Les recettes les mieux notées</h2>
+      <h2 class="most-viewed__title">Les recettes les plus populaires</h2>
       <div class="most-viewed__container">
         <div class="recipe">
-          <img src="#" alt="">
+          <img src="./docs/pineapple-pizza.jpg" alt="">
           <div class="recipe__info">
             <h3 class="recipe__name">Pate carbonara</h3>
             <p class="recipe__description">
@@ -112,7 +117,7 @@
           </div>
         </div>
         <div class="recipe">
-          <img src="#" alt="">
+          <img src="./docs/pineapple-pizza.jpg" alt="">
           <div class="recipe__info">
             <h3 class="recipe__name">Pate carbonara</h3>
             <p class="recipe__description">
@@ -122,7 +127,7 @@
           </div>
         </div>
         <div class="recipe">
-          <img src="#" alt="">
+          <img src="./docs/pineapple-pizza.jpg" alt="">
           <div class="recipe__info">
             <h3 class="recipe__name">Pate carbonara</h3>
             <p class="recipe__description">
@@ -132,7 +137,7 @@
           </div>
         </div>
         <div class="recipe">
-          <img src="#" alt="">
+          <img src="./docs/pineapple-pizza.jpg" alt="">
           <div class="recipe__info">
             <h3 class="recipe__name">Pate carbonara</h3>
             <p class="recipe__description">
@@ -142,7 +147,7 @@
           </div>
         </div>
         <div class="recipe">
-          <img src="#" alt="">
+          <img src="./docs/pineapple-pizza.jpg" alt="">
           <div class="recipe__info">
             <h3 class="recipe__name">Pate carbonara</h3>
             <p class="recipe__description">
@@ -154,19 +159,31 @@
       </div>
     </section>
   </main>
-  <footer>
-    <nav>
-      <ul>
-        <li>Mentions légales</li>
-        <li>Contacts</li>
+  <footer class="footer">
+    <nav class="footer__nav">
+      <ul class="footer__link-list">
+        <li class="footer__link"><a href="#">Mentions légales</a></li>
+        <li class="footer__link"><a href="#">Contacts</a></li>
       </ul>
     </nav>
-    <button>Ajouter une recette</button>
-    <p>
+    <button class="footer__add-recipe">Ajouter une recette</button>
+    <p class="footer__description">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis minus earum
       aspernatur fugiat cumque minima tempora expedita natus vitae?
     </p>
   </footer>
+
+  <script>
+    const burgerButton = document.querySelector(".header__burger");
+    const nav = document.querySelector(".header__nav");
+
+    burgerButton.addEventListener("click", menuHandler);
+
+    function menuHandler() {
+      nav.classList.toggle("nav--active");
+      burgerButton.classList.toggle("burger-active")
+    }
+  </script>
 </body>
 
 </html>
