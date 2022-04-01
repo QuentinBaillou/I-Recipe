@@ -1,3 +1,3 @@
 # I-Recipe
 
-A quick integration for professionnal title
+A quick integration for professional title
